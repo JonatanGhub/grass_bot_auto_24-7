@@ -1,0 +1,9 @@
+aiohttp
+fake-useragent
+pyyaml
+prometheus-client
+selenium
+pandas
+web3
+plotly
+python-dotenv
