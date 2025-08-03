@@ -7,3 +7,4 @@ pandas
 web3
 plotly
 python-dotenv
+psutil
