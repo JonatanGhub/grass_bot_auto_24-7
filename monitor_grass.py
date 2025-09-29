@@ -4,8 +4,8 @@ import subprocess
 import psutil
 import logging
 
-# Ruta al ejecutable de Grass (¡pon aquí la tuya!)
-GRASS_PATH = r"C:\Program Files\Grass"
+# Ruta al ejecutable de Grass (¡asegúrate de que sea correcta!)
+GRASS_PATH = r"C:\Program Files\Grass\grass.exe"
 print(f"GRASS_PATH: {GRASS_PATH}")
 # Configuración de logging
 logging.basicConfig(
@@ -32,7 +32,7 @@ def start_grass():
     """Inicia la app de Grass."""
     print("Iniciando Grass...")
     try:
-        subprocess.Popen([GRASS_PATH], shell=True)
+        subprocess.Popen(f'start "" "{GRASS_PATH}"', shell=True)
         logging.info("Grass iniciado.")
         print("Grass iniciado.")
     except Exception as e:
